@@ -12,6 +12,32 @@ export default {
 
     components: {
         AppNavbar,
+    },
+
+    methods: {
+
+        nextSlide() {
+        
+          if(this.store.activeIndex < this.store.slideHeader.length - 1) {
+            this.store.activeIndex++;
+            console.log(this.store.activeIndex);
+          } else {
+            this.store.activeIndex = 0;
+            console.log(this.store.activeIndex);
+          }
+  
+        },
+    
+        prevSlide() {
+      
+          if(this.store.activeIndex <= 0) {
+            this.store.activeIndex = this.store.slideHeader.length - 1;
+            console.log(this.store.activeIndex);
+          } else {
+            this.store.activeIndex--;
+            console.log(this.store.activeIndex);
+          }
+        },
     }
 
 }
@@ -21,7 +47,7 @@ export default {
     <div id="container-header">
 
     
-      <img src="../../public/course-9-f-img.jpg" alt="">
+      <img :src="store.slideHeader[store.activeIndex].image" alt="">
 
       <!-- navbar -->
       <div id="container-nav">
@@ -29,9 +55,23 @@ export default {
       </div>
       <!-- /navbar -->
       <div id="container-text">
-          <h1>Contemporary Ideas</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, pariatur maiores necessitatibus amet in dolore velit provident vero distinctio deleniti a rem sapiente sunt veniam! Doloremque, dicta voluptatem. Obcaecati, inventore?</p>
+          <h1> {{ store.slideHeader[store.activeIndex].title }} </h1>
+          <p> {{ store.slideHeader[store.activeIndex].text }} </p>
           <button>REGISTER NOW</button>
+      </div>
+
+      <div id="dots-container">
+        <div class="dots active"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+      </div>
+
+      <div id="arrow-left" @click=" prevSlide() ">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
+      <div id="arrow-right" @click="nextSlide() ">
+        <i class="fa-solid fa-chevron-right"></i>
       </div>
     </div>
 </template>
@@ -71,8 +111,53 @@ export default {
         transform: translateX(-50%) translateY(-50%);
 
         text-align: center;
+
+        h1{
+          font-family: serif;
+        }
     }
 
+    #dots-container{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        gap: 10px;
+
+        .dots{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: white;
+
+            &.active{
+                background-color: black;
+            }
+
+        }
+
+        
+    }
+
+    #arrow-left{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+
+        font-size: 30px;
+    }
+
+    #arrow-right{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+
+        font-size: 30px;
+    }
     
 }
 </style>
