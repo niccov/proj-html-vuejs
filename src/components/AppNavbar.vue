@@ -35,6 +35,8 @@ export default {
 
 <style lang="scss" scoped>
 #container-navbar{
+    width: 100%;
+
     padding-top: 10px;
     
     display: flex;
