@@ -151,5 +151,38 @@ export const store = reactive({
         '../public/landing-carousel-gallery-img-4.jpg',
         '../public/landing-carousel-gallery-img-5.jpg',
         '../public/landing-carousel-gallery-img-7.jpg'
-    ]
+    ],
+
+    
+    firstColumnFooter: {
+        image: '../public/logo-light.png',
+        testo: 'Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home',
+        phone: '1-677-124-44227',
+        date: 'Mon-Sat 8.00 - 18.00'
+    },
+
+    secondColumnFooter: {
+        title: 'Popular Courses',
+        firstSubject: 'Business English',
+        firstTeacher: 'Preston Marshall',
+        secondSubject: 'Social Computing',
+        secondTeacher: 'David Sanders',
+        thirdSubject: 'Learn Spanish',
+        thirdTeacher: 'Jennie King'
+
+    },
+
+    thirdColumnFooter: {
+        title: 'Support',
+        linkOne: 'User dashboard',
+        linkTwo: 'Contact Us',
+        linkThree: 'FAQ',
+        linkFour: 'Course Offer',
+        linkFive: 'Events'
+    },
+
+    fourthColumnFooter: {
+        title: 'Flexible Learning',
+        image: '../public/footer-img-1.png',
+    },
 });
