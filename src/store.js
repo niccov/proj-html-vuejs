@@ -84,4 +84,72 @@ export const store = reactive({
     ],
 
     activeIndexS4: 0,
+
+    selectorSectionFive: [
+        {
+            titleColumn: 'What We Do',
+            title: 'Learning Possibilities',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia, illo eveniet, soluta velit placeat nisi sapiente autem necessitatibus a maxime laudantium laboriosam quia dolor ut est. Neque, ad voluptas.',
+            infoOne: 'We enrich lives through learning',
+            infoTwo: 'Maximizing potential throungh individual attention',
+            infoThree: 'The trusted name for specialized training',
+            infoFour: 'People teach. People learn. This is where they connect'
+        },
+        {
+            titleColumn: 'Degree Programme',
+            title: 'Learning Programme',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia, illo eveniet, soluta velit placeat nisi sapiente autem necessitatibus a maxime laudantium laboriosam quia dolor ut est. Neque, ad voluptas.',
+            infoOne: 'We enrich lives through learning',
+            infoTwo: 'Maximizing potential throungh individual attention',
+            infoThree: 'The trusted name for specialized training',
+            infoFour: 'People teach. People learn. This is where they connect'
+        },
+        {
+            titleColumn: 'Career Achievements',
+            title: 'Career Possibilities',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia, illo eveniet, soluta velit placeat nisi sapiente autem necessitatibus a maxime laudantium laboriosam quia dolor ut est. Neque, ad voluptas.',
+            infoOne: 'We enrich lives through learning',
+            infoTwo: 'Maximizing potential throungh individual attention',
+            infoThree: 'The trusted name for specialized training',
+            infoFour: 'People teach. People learn. This is where they connect'
+        },
+        {
+            titleColumn: 'Personal Managment',
+            title: 'How To Manage',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia, illo eveniet, soluta velit placeat nisi sapiente autem necessitatibus a maxime laudantium laboriosam quia dolor ut est. Neque, ad voluptas.',
+            infoOne: 'We enrich lives through learning',
+            infoTwo: 'Maximizing potential throungh individual attention',
+            infoThree: 'The trusted name for specialized training',
+            infoFour: 'People teach. People learn. This is where they connect'
+        },
+        {
+            titleColumn: 'Steps To Success',
+            title: 'Great Success',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia, illo eveniet, soluta velit placeat nisi sapiente autem necessitatibus a maxime laudantium laboriosam quia dolor ut est. Neque, ad voluptas.',
+            infoOne: 'We enrich lives through learning',
+            infoTwo: 'Maximizing potential throungh individual attention',
+            infoThree: 'The trusted name for specialized training',
+            infoFour: 'People teach. People learn. This is where they connect'
+        },
+        {
+            titleColumn: 'Knowledge Tranfer',
+            title: 'Learning Transfer',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae mollitia, illo eveniet, soluta velit placeat nisi sapiente autem necessitatibus a maxime laudantium laboriosam quia dolor ut est. Neque, ad voluptas.',
+            infoOne: 'We enrich lives through learning',
+            infoTwo: 'Maximizing potential throungh individual attention',
+            infoThree: 'The trusted name for specialized training',
+            infoFour: 'People teach. People learn. This is where they connect'
+        }
+    ],
+
+    activeIndexS5: 0,
+
+    sliderSectionSix: [
+        '../public/landing-carousel-gallery-img-1.jpg',
+        '../public/landing-carousel-gallery-img-2.jpg',
+        '../public/landing-carousel-gallery-img-3.jpg',
+        '../public/landing-carousel-gallery-img-4.jpg',
+        '../public/landing-carousel-gallery-img-5.jpg',
+        '../public/landing-carousel-gallery-img-7.jpg'
+    ]
 });

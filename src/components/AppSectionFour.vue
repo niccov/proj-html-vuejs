@@ -25,7 +25,15 @@ export default{
             <div> {{ store.sliderSectionFour[store.activeIndexS4].name }} </div>
 
             <div> {{ store.sliderSectionFour[store.activeIndexS4].status }} </div>
-        </div>    
+        </div>  
+        
+        <div id="arrow-left" @click="$emit('prev')">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+
+        <div id="arrow-right" @click="$emit('next') ">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
     </div>
 </template>
 
@@ -45,9 +53,11 @@ export default{
     color: white;
     font-family: serif;
     font-size: 18px;
+
+    position: relative;
     .container-img-s4{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
 
         img{
             width: 100%;
@@ -66,6 +76,24 @@ export default{
         gap: 25px;
 
         width: 40%;
+    }
+
+    #arrow-left{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+
+        font-size: 30px;
+    }
+
+    #arrow-right{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+
+        font-size: 30px;
     }
 }
 </style>
